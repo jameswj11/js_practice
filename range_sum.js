@@ -41,7 +41,7 @@ var NumArray = function(nums) {
 };
 
 /** 
- * @param {number} left  d
+ * @param {number} left
  * @param {number} right
  * @return {number}
  */
@@ -54,8 +54,8 @@ NumArray.prototype.sumRange = function(left, right) {
 
     // calculate sum between bounds
     for (let i = left; i <= right; i++) {
-        sum += this.nums[i]
-    }
+        sum += this.nums[i];
+    };
 
     return sum;
 };
