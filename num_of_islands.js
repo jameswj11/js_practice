@@ -51,9 +51,9 @@ var numIslands = function(grid) {
 
                 // move to all adjacent land tiles
                 move(m, n, grid);
-            }
-        }
-    }
+            };
+        };
+    };
 
     return islandCount;
 };
@@ -62,14 +62,14 @@ function move(m, n, grid) {
     // check if out of bounds
     if ((m >= grid.length) || (m < 0) || (n >= grid[m].length) || (n < 0) || (grid[m][n] != '1')) {
         return;
-    }
+    };
 
     // change tile so we don't count it again
-    grid[m][n] = "X"
+    grid[m][n] = "X";
 
     // continue moving recursively around the island until we reach all land tiles
-    move(m, (n - 1), grid) // north
-    move((m+1), n, grid) // east
-    move(m, (n+1), grid) // south
-    move((m -1), n, grid) // west
+    move(m, (n - 1), grid); // north
+    move((m+1), n, grid); // east
+    move(m, (n+1), grid); // south
+    move((m -1), n, grid); // west
 }
