@@ -38,13 +38,12 @@ var numIslands = function(grid) {
     const x_length = grid[0].length;
 
     let islandCount = 0;
-    let m = 0;
-    let n = 0;
 
     for (let i = 0; i < x_length; i++) {
         for (let j = 0; j < y_length; j++) {
-            m = j;
-            n = i;
+            let m = j;
+            let n = i;
+            
             if (grid[m][n] === "1") {
                 // we find an island, increase island count
                 islandCount++;
