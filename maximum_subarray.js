@@ -56,6 +56,7 @@ var maxSubArray = function(nums) {
 
     for (let i = 0; i < nums.length; i++) {
         currentSum = 0;
+        // starting at each item in array, check sum using all others
         for (let j = i; j < nums.length; j++) {
             currentSum += nums[j];
             if (currentSum > largestSum) {
