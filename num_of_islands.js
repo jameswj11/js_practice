@@ -72,4 +72,4 @@ function move(m, n, grid) {
     move((m+1), n, grid); // east
     move(m, (n+1), grid); // south
     move((m -1), n, grid); // west
-}
+};
