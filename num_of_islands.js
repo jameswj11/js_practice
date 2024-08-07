@@ -26,6 +26,7 @@ n == grid[i].length
 1 <= m, n <= 300
 grid[i][j] is '0' or '1'. */
 
+//////////////////////
 /// MY CODE BELOW ///
 
 /**
@@ -43,7 +44,7 @@ var numIslands = function(grid) {
         for (let j = 0; j < y_length; j++) {
             let m = j;
             let n = i;
-            
+
             if (grid[m][n] === "1") {
                 // we find an island, increase island count
                 islandCount++;
